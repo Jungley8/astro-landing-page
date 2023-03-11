@@ -55,16 +55,15 @@ const callsToAction = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  console.log(mobileMenuOpen);
 
   return (
-    <header className="bg-white">
+    <header className="bg-white z-50">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               className="h-8 w-auto"
@@ -147,18 +146,36 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+          <a
+            href="/#newsletter"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Newsletter
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+          <a
+            href="/price"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Price
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+          <a
+            href="/contact"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Contact
+          </a>
+          <a
+            href="/blog"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Blog
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/signin"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -241,7 +258,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/signin"
                   className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Log in
