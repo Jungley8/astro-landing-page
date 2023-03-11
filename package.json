@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev --host",
-    "build": "astro build",
+    "build": "astro check && tsc --noEmit && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^5.1.0",
     "@astrojs/prism": "^2.1.0",
     "@astrojs/react": "^2.1.0",
     "@astrojs/tailwind": "^3.1.0",
