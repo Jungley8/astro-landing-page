@@ -1,7 +1,7 @@
 # Astro landing-page
 
 ```
-npm create astro@latest -- --template jungley8/astro-landing-page
+yarn create astro --template jungley8/astro-landing-page
 ```
 
 ## 🚀 Project Structure
