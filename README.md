@@ -1,17 +1,8 @@
-# Astro Starter Kit: Basics
+# Astro landing-page
 
 ```
-npm create astro@latest -- --template basics
+npm create astro@latest -- --template jungley8/astro-landing-page
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
 
 ## 🚀 Project Structure
 
@@ -19,15 +10,34 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```
 /
-├── public/
+├── public
 │   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
+├── src
+│   ├── components
+│   │   ├── BlogPostCard.tsx
+│   │   ├── CTA.tsx
+│   │   ├── Card.astro
+│   │   ├── Data.tsx
+│   │   ├── Feature.tsx
+│   │   ├── Newsletter.tsx
+│   │   ├── Price.tsx
+│   │   ├── Signin.tsx
+│   │   └── Stats.tsx
+│   ├── env.d.ts
+│   ├── layouts
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   └── pages
+│       ├── 404.astro
+│       ├── blog
+│       │   ├── [id].astro
+│       │   └── index.astro
+│       ├── contact.astro
+│       ├── index.astro
+│       ├── price.astro
+│       └── signin.astro
+├── tailwind.config.cjs
 └── package.json
 ```
 
@@ -41,15 +51,26 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+| Command             | Action                                           |
+| :------------------ | :----------------------------------------------- |
+| `yarn`              | Installs dependencies                            |
+| `yarn dev`          | Starts local dev server at `localhost:3000`      |
+| `yarn build`        | Build your production site to `./dist/`          |
+| `yarn preview`      | Preview your build locally, before deploying     |
+| `yarn astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `yarn astro --help` | Get help using the Astro CLI                     |
+| `yarn prettier`     | Formate and beautify your code                   |
 
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Demo
+
+[astro-landing-page demo](astro-landing-page-jet.vercel.app)
+
+## Deploy
+
+Host your own live version of Astro-landing-page with Vercel.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FJungley8%2Fastro-landing-page)
