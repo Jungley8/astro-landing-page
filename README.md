@@ -67,7 +67,7 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Demo
 
-[astro-landing-page demo](astro-landing-page-jet.vercel.app)
+[astro-landing-page demo](https://astro-landing-page-jet.vercel.app)
 
 ## Deploy
 
